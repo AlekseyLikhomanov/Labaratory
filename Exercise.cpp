@@ -7,14 +7,14 @@ int main() {
 	int n;
 	cin >> n;
 	if (cin.fail()) {
-		cout << "Îøèáêà ââîäà";
+		cout << "Input problem";
 		return 0;
 	}
 	int** matrix = input(n);
-	int** result = new int* [n];//ñîçäàíèå ìàññèâà â êîòîğîì õğàíèòñÿ ğåçóëüòàò
+	int** result = new int* [n];//Ã±Ã®Ã§Ã¤Ã Ã­Ã¨Ã¥ Ã¬Ã Ã±Ã±Ã¨Ã¢Ã  Ã¢ ÃªÃ®Ã²Ã®Ã°Ã®Ã¬ ÃµÃ°Ã Ã­Ã¨Ã²Ã±Ã¿ Ã°Ã¥Ã§Ã³Ã«Ã¼Ã²Ã Ã²
 	for (int i = 0; i < n; i++)
 		result[i] = new int[n];
-	function(matrix, result, n);//âû÷èñëåíèå
+	function(matrix, result, n);//Ã¢Ã»Ã·Ã¨Ã±Ã«Ã¥Ã­Ã¨Ã¥
 	for (int i = 0; i < n; i++) 
 		for (int j = 0; j < n; j++)
 			matrix[i][j] = result[i][j];
