@@ -11,7 +11,7 @@ int main() {
 		return 0;
 	}
 	int** matrix = input(n);
-	int** result = new int* [n];//ñîçäàíèå ìàññèâà â êîòîðîì õðàíèòñÿ ðåçóëüòàò
+	int** result = new int* [n];//for output result
 	for (int i = 0; i < n; i++)
 		result[i] = new int[n];
 	function(matrix, result, n);//âû÷èñëåíèå
